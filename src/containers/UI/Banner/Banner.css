@@ -1,0 +1,39 @@
+.Banner-deck
+{
+    margin:0 auto 15px;
+    background-color: #cacaca;
+    border: 1px solid #ddd;
+  border-radius: 4px;
+ 
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.Banner-deck .banner-inner
+{
+    align-items: center;
+    min-height: 100px;
+    width: 100%;
+    text-align: center;
+}
+.Banner-deck .banner-inner .Banner-content
+{
+    font-family:'Source Sans Pro', sans-serif;
+    width:62%;
+}
+.Banner-deck .banner-inner .Banner-content .block-heading
+{
+    font-size: 26px;
+    margin: 8% 0 0;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    color:#4167b2ff;
+}
+.Banner-deck .banner-inner .Banner-content .block-heading
+.Banner-content-desc
+{
+    margin: 5% auto 0;
+    width: 462px;
+    text-align: center;
+    font-size: 16px;
+
+}

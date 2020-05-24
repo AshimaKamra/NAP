@@ -1,0 +1,68 @@
+.RetailerApp
+{
+  padding-top:35px;
+}
+.sidebar
+{
+  background-color: #4167b2ff;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 6px;
+}
+.boundry-top
+{
+  position: relative;
+}
+.sidebar-heading h1{
+  font-family:  'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-size: 50px;
+    color:white;
+}
+.sidebar-filter
+{
+  text-transform: uppercase;
+    font-family:  'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: white;
+    margin-top: 5px;
+
+
+}
+
+.filter-toggle .toggler
+{
+    color: white;
+    cursor: pointer;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 10px;
+    margin-top: 5px;
+    width:2px;
+    
+   
+}
+.filter-form input{
+  color: #fff;
+    font-family:  'Source Sans Pro', sans-serif;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: transparent;
+    margin-bottom: 2rem;
+}
+.filter-heading
+{
+  font-family:  'Source Sans Pro', sans-serif;
+  font-weight: bolder;
+  font-size: 15px;
+  color:white
+}
+.Product-heading
+{
+    font-family:'Sulphur Point', sans-serif;
+    text-align: center;
+    text-decoration-line:  underline overline;
+    font-size: x-large;
+}
