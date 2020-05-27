@@ -1,0 +1,192 @@
+log.js:24 [HMR] Waiting for update signal from WDS...
+index.js:1 Warning: Invalid DOM property `for`. Did you mean `htmlFor`?
+    in label (at Footer.js:22)
+    in div (at Footer.js:19)
+    in div (at Footer.js:17)
+    in div (at Footer.js:16)
+    in div (at Footer.js:15)
+    in div (at Footer.js:14)
+    in section (at Footer.js:13)
+    in div (at Footer.js:12)
+    in div (created by Jumbotron)
+    in Jumbotron (at Footer.js:11)
+    in div (at Footer.js:9)
+    in footer (at App.js:32)
+    in Router (created by BrowserRouter)
+    in BrowserRouter (at App.js:14)
+    in div (at App.js:13)
+    in App (at src/index.js:11)
+    in StrictMode (at src/index.js:10)
+console.<computed> @ index.js:1
+printWarning @ react-dom.development.js:88
+error @ react-dom.development.js:60
+validateProperty$1 @ react-dom.development.js:5541
+warnUnknownProperties @ react-dom.development.js:5595
+validateProperties$2 @ react-dom.development.js:5619
+validatePropertiesInDevelopment @ react-dom.development.js:5662
+setInitialProperties @ react-dom.development.js:5941
+finalizeInitialChildren @ react-dom.development.js:7499
+completeWork @ react-dom.development.js:18978
+completeUnitOfWork @ react-dom.development.js:22192
+performUnitOfWork @ react-dom.development.js:22165
+workLoopSync @ react-dom.development.js:22130
+performSyncWorkOnRoot @ react-dom.development.js:21756
+scheduleUpdateOnFiber @ react-dom.development.js:21188
+updateContainer @ react-dom.development.js:24373
+(anonymous) @ react-dom.development.js:24758
+unbatchedUpdates @ react-dom.development.js:21903
+legacyRenderSubtreeIntoContainer @ react-dom.development.js:24757
+render @ react-dom.development.js:24840
+./src/index.js @ index.js:9
+__webpack_require__ @ bootstrap:784
+fn @ bootstrap:150
+1 @ serviceWorker.js:141
+__webpack_require__ @ bootstrap:784
+checkDeferredModules @ bootstrap:45
+webpackJsonpCallback @ bootstrap:32
+(anonymous) @ main.chunk.js:1
+index.js:1 Warning: Legacy context API has been detected within a strict-mode tree.
+
+The old API will be supported in all 16.x releases, but applications using it should migrate to the new version.
+
+Please update the following components: Transition
+
+Learn more about this warning here: https://fb.me/react-legacy-context
+    in Transition (created by Collapse)
+    in Collapse (created by UncontrolledCollapse)
+    in UncontrolledCollapse (at Sidebar.js:28)
+    in div (at Sidebar.js:15)
+    in div (at Sidebar.js:10)
+    in div (at Sidebar.js:9)
+    in Sidebar (at App.js:23)
+    in div (at App.js:22)
+    in div (at App.js:21)
+    in div (at App.js:20)
+    in Router (created by BrowserRouter)
+    in BrowserRouter (at App.js:14)
+    in div (at App.js:13)
+    in App (at src/index.js:11)
+    in StrictMode (at src/index.js:10)
+console.<computed> @ index.js:1
+printWarning @ react-dom.development.js:88
+error @ react-dom.development.js:60
+(anonymous) @ react-dom.development.js:11432
+push../node_modules/react-dom/cjs/react-dom.development.js.ReactStrictModeWarnings.flushLegacyContextWarning @ react-dom.development.js:11418
+flushRenderPhaseStrictModeWarningsInDEV @ react-dom.development.js:23109
+commitRootImpl @ react-dom.development.js:22396
+unstable_runWithPriority @ scheduler.development.js:653
+runWithPriority$1 @ react-dom.development.js:11039
+commitRoot @ react-dom.development.js:22381
+finishSyncRender @ react-dom.development.js:21807
+performSyncWorkOnRoot @ react-dom.development.js:21793
+scheduleUpdateOnFiber @ react-dom.development.js:21188
+updateContainer @ react-dom.development.js:24373
+(anonymous) @ react-dom.development.js:24758
+unbatchedUpdates @ react-dom.development.js:21903
+legacyRenderSubtreeIntoContainer @ react-dom.development.js:24757
+render @ react-dom.development.js:24840
+./src/index.js @ index.js:9
+__webpack_require__ @ bootstrap:784
+fn @ bootstrap:150
+1 @ serviceWorker.js:141
+__webpack_require__ @ bootstrap:784
+checkDeferredModules @ bootstrap:45
+webpackJsonpCallback @ bootstrap:32
+(anonymous) @ main.chunk.js:1
+react_devtools_backend.js:6 ./src/components/Product/Product.js
+  Line 18:11:  'productsOutput' is assigned a value but never used  no-unused-vars
+r @ react_devtools_backend.js:6
+printWarnings @ webpackHotDevClient.js:138
+handleWarnings @ webpackHotDevClient.js:143
+push../node_modules/react-dev-utils/webpackHotDevClient.js.connection.onmessage @ webpackHotDevClient.js:210
+react_devtools_backend.js:6 ./src/components/Footer/Footer.js
+  Line 2:19:   'Container' is defined but never used                                                                      no-unused-vars
+  Line 2:29:   'Card' is defined but never used                                                                           no-unused-vars
+  Line 2:34:   'CardBody' is defined but never used                                                                       no-unused-vars
+  Line 2:51:   'UncontrolledCollapse' is defined but never used                                                           no-unused-vars
+  Line 41:32:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+r @ react_devtools_backend.js:6
+printWarnings @ webpackHotDevClient.js:138
+handleWarnings @ webpackHotDevClient.js:143
+push../node_modules/react-dev-utils/webpackHotDevClient.js.connection.onmessage @ webpackHotDevClient.js:210
+react_devtools_backend.js:6 ./src/containers/Sidebar/Sidebar.js
+  Line 3:10:  'Route' is defined but never used   no-unused-vars
+  Line 3:24:  'Switch' is defined but never used  no-unused-vars
+  Line 3:32:  'Router' is defined but never used  no-unused-vars
+r @ react_devtools_backend.js:6
+printWarnings @ webpackHotDevClient.js:138
+handleWarnings @ webpackHotDevClient.js:143
+push../node_modules/react-dev-utils/webpackHotDevClient.js.connection.onmessage @ webpackHotDevClient.js:210
+react_devtools_backend.js:6 ./src/containers/Products/Products.js
+  Line 4:8:  'Product' is defined but never used  no-unused-vars
+r @ react_devtools_backend.js:6
+printWarnings @ webpackHotDevClient.js:138
+handleWarnings @ webpackHotDevClient.js:143
+push../node_modules/react-dev-utils/webpackHotDevClient.js.connection.onmessage @ webpackHotDevClient.js:210
+AllProducts:1 Access to XMLHttpRequest at 'https://greendeck-datasets-2.s3.amazonaws.com/netaporter_gb_similar.json' from origin 'http://localhost:3000' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+xhr.js:178 GET https://greendeck-datasets-2.s3.amazonaws.com/netaporter_gb_similar.json net::ERR_FAILED
+dispatchXhrRequest @ xhr.js:178
+xhrAdapter @ xhr.js:12
+dispatchRequest @ dispatchRequest.js:52
+Promise.then (async)
+request @ Axios.js:61
+Axios.<computed> @ Axios.js:76
+wrap @ bind.js:9
+componentDidMount @ Products.js:14
+commitLifeCycles @ react-dom.development.js:19814
+commitLayoutEffects @ react-dom.development.js:22803
+callCallback @ react-dom.development.js:188
+invokeGuardedCallbackDev @ react-dom.development.js:237
+invokeGuardedCallback @ react-dom.development.js:292
+commitRootImpl @ react-dom.development.js:22541
+unstable_runWithPriority @ scheduler.development.js:653
+runWithPriority$1 @ react-dom.development.js:11039
+commitRoot @ react-dom.development.js:22381
+finishSyncRender @ react-dom.development.js:21807
+performSyncWorkOnRoot @ react-dom.development.js:21793
+scheduleUpdateOnFiber @ react-dom.development.js:21188
+updateContainer @ react-dom.development.js:24373
+(anonymous) @ react-dom.development.js:24758
+unbatchedUpdates @ react-dom.development.js:21903
+legacyRenderSubtreeIntoContainer @ react-dom.development.js:24757
+render @ react-dom.development.js:24840
+./src/index.js @ index.js:9
+__webpack_require__ @ bootstrap:784
+fn @ bootstrap:150
+1 @ serviceWorker.js:141
+__webpack_require__ @ bootstrap:784
+checkDeferredModules @ bootstrap:45
+webpackJsonpCallback @ bootstrap:32
+(anonymous) @ main.chunk.js:1
+createError.js:16 Uncaught (in promise) Error: Network Error
+    at createError (createError.js:16)
+    at XMLHttpRequest.handleError (xhr.js:83)
+createError @ createError.js:16
+handleError @ xhr.js:83
+Promise.then (async)
+componentDidMount @ Products.js:14
+commitLifeCycles @ react-dom.development.js:19814
+commitLayoutEffects @ react-dom.development.js:22803
+callCallback @ react-dom.development.js:188
+invokeGuardedCallbackDev @ react-dom.development.js:237
+invokeGuardedCallback @ react-dom.development.js:292
+commitRootImpl @ react-dom.development.js:22541
+unstable_runWithPriority @ scheduler.development.js:653
+runWithPriority$1 @ react-dom.development.js:11039
+commitRoot @ react-dom.development.js:22381
+finishSyncRender @ react-dom.development.js:21807
+performSyncWorkOnRoot @ react-dom.development.js:21793
+scheduleUpdateOnFiber @ react-dom.development.js:21188
+updateContainer @ react-dom.development.js:24373
+(anonymous) @ react-dom.development.js:24758
+unbatchedUpdates @ react-dom.development.js:21903
+legacyRenderSubtreeIntoContainer @ react-dom.development.js:24757
+render @ react-dom.development.js:24840
+./src/index.js @ index.js:9
+__webpack_require__ @ bootstrap:784
+fn @ bootstrap:150
+1 @ serviceWorker.js:141
+__webpack_require__ @ bootstrap:784
+checkDeferredModules @ bootstrap:45
+webpackJsonpCallback @ bootstrap:32
+(anonymous) @ main.chunk.js:1

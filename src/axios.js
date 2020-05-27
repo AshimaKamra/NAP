@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const instance = axios.create({
-    baseURL: 'https://greendeck-datasets-2.s3.amazonaws.com/netaporter_gb_similar.json'
+    baseURL: 'https://netaporter-f154b.firebaseio.com/'
 });
 
 // instance.defaults.headers.common['Authorization'] = 'AUTH TOKEN FROM INSTANCE';

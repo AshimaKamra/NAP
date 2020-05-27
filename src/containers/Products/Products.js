@@ -1,65 +1,62 @@
 import React,{Component} from 'react';
 
-import axios from '../../axios';
+import axios from 'axios';
 import Product from '../../components/Product/Product';
 
 class Products extends Component
 {
-    state={
+    state = {
         products:[],
-        loading: true
+        loading:true
+       
     }
-    componentDidMount(){
-        axios.get('/')
-        .then(response=>{
-            const products=response.data.slice(0,20);
-            // const updatedProducts=products.map(product=>{
-            //     return{
-            //         ...product,
-            //     }
-            // });
-            // this.setState({products:updatedProducts});
-            const updatedProducts=[];
-            for(let key in response.data)
-            {
-                updatedProducts.push({
-                    ...response.data[key],
-                    id:key
-                });
-            }
-            this.setState({loading:false,products:updatedProducts})
-        })
-        .catch(error=>{
-            this.setState({loading:false})
-        })
+
+    componentDidMount() {
+      axios.get('https://greendeck-datasets-2.s3.amazonaws.com/netaporter_gb_similar.json')
+      .then(res=>{
+        //   const obj=JSON.parse(res.data);
+           console.log(res);
+          let fetchedProducts=[];
+           fetchedProducts = res.data.slice( 0, 20 );
+          for(let key in res.data)
+          {
+              fetchedProducts.push({
+                  ...res.data[key],
+                  id:key
+              });
+          }
+         
+          this.setState({loading:false,products:fetchedProducts})
+      })
+      .catch(error=>{
+          console.log(error);
+      })
     }
-    render()
-    {
-        let products=<p style={{textAlign:'center'}}>Something went wrong!</p>
-        if(!this.state.error)
+
+    render () {
+        let products=null;
+        if(this.state.error)
         {
-            products=this.state.products.map(product=>{
-                return(
-                    <Product
-                    key={product._id}
-                    brandName={product.name}
-                    price={product.price.regular_price}
-                    discount={product.price.offer_price}
-                    stock={product.stock}
-                    originDate={product.created_at}/>
-                )
+         products=<p style={{textAlign:'center'}}>Something went wrong</p>
+        }
+        else
+        {
+            products=this.state.products.map(pro=>{
+                return (<Product 
+                       key={pro._id}
+                       name={pro.name}
+                       brand={pro.brand.name}/>
+                    )
             })
         }
-        return(
+        return (
             <div>
-                <section className="Products">
-                    <div className="container">
-                    {products}
-                    </div>
-                </section>
+               <h1>{this.state.products.name}</h1>
+            {products}
+            
+                  
             </div>
-
-        )
+        );
     }
 }
 export default Products;

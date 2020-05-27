@@ -1,34 +1,31 @@
 import React from 'react';
 import './Product.css';
-import {withRouter} from 'react-router-dom';
+
+
 
 
 const product=(props)=>{
+    console.log(props);
     return(
-        <div className="row clearfix">
-            <div className="card-wrapper-container col-xs-12 col-sm-6 col-md-4">
-                <div className="product-list-box card desktot-cart">
-                    <div className="row">
-                        <div className="col-xs-12 card-img-container">
-                            <div className="card-img">
-                                <div></div>
-                            </div>
-                        </div>
-                        <div className="col-xs-12">
-                            <div className="product-name">
-                                <h2>{props.brandName}</h2>
-                            </div>
-                            <div className="clearfix product-price-content">
-                                <div className="price-offer">
-                                    <span>{props.price}</span><span>{props.discount}</span> 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        
+        <div className="product-panel container-fluid">
+           <div className="row" id="myObj">
+               <div class="col-sm-4">
+                   <div className="card card-body">
+                       <div className="product-picture">
+                           <img src={props.image} style={{width:'180px',height:'185px'}} alt="ProductImage"/>
+                       </div>
+                       <div>
+                           <h2 className="product-name">{props.name}</h2>
+                       </div>
+                   <div className="brand-name">{props.brand}<br/>{props.discount}{props.createdat}</div>
+                   </div>
+               </div>
+           </div>
         </div>
+            
     )
+       
+    
 }
-
-export default withRouter(product);
+export default product;
