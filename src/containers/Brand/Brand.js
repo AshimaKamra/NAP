@@ -2,48 +2,39 @@ import React,{Component} from 'react';
 import axios from 'axios';
 import {UncontrolledCollapse, Button, CardBody, Card, Label} from 'reactstrap';
 import {NavLink} from 'react-router-dom';
-
-
+import Product from '../../components/Product/Product';
 class Brand extends Component
 {
-    constructor(props){
-        super(props);
-        this.state={
-            query:'',
-            results:{},
-            loading:false,
-            message:''
-        };
-        this.cancel='';
+    state={
+        search:""
     }
-    fetchSearchResults =(updatedPageNo='', query)=>{
-        const pageNumber=updatedPageNo ? `page=4${updatedPageNo}`: '';
-        const searchUrl=`https://greendeck-datasets-2.s3.amazonaws.com/netaporter_gb_similar.json/search&brandName=${query}`
-        if(this.cancel)
+
+    renderProduct=product=>{
+        const {search} =this.state;
+        var code =product.code.toLowerCase()
+        if(search!==""&&product.brand.name.toLowerCase().indexOf(search.toLowerCase())===-1)
         {
-            this.cancel.cancel();
+            return null;
         }
-        this.cancel=axios.CancelToken.source();
-        axios.get(searchUrl,{
-            cancelToken:this.cancel.token
-        })
-        .then(res=>{
-            console.log(res);
-        })
-        .catch(error=>{
-            if(axios.isCancel(error)||error){
-                this.setState({
-                    loading:false,
-                    message:'Failed to Fetch the data'
-                })
-            }
-        })
+        return <div class="col-sm-4">
+        <div className="card card-body">
+            <div className="product-picture">
+                <img src={props.image} style={{width:'180px',height:'185px'}} alt="ProductImage"/>
+            </div>
+            <div>
+                <h2 className="product-name">{props.name}</h2>
+            </div>
+        <div className="brand-name">{props.brand}<br/>{props.discount}{props.createdat}</div>
+        </div>
+    </div>
+        
+      
     }
+    
     handleOnInputChange=(event)=>{
        const query=event.target.value;
        console.log(query)
-       this.setState({query:query,loading:true,message:''});
-       this.fetchSearchResults(1,query);
+       
     }
     render()
     {
@@ -63,7 +54,7 @@ class Brand extends Component
                     required/>
                      </label></div>
                     <div className="float-right">
-                    <Button><NavLink to={{pathname:'/brand',hash:'#search', search:'?brand=value'}}>Go</NavLink> </Button></div>
+                    <Button><NavLink to="/brnad">Go</NavLink> </Button></div>
                     </div>
             </div>
         )

@@ -1,9 +1,6 @@
 import React from 'react';
 import './Product.css';
 
-
-
-
 const product=(props)=>{
     console.log(props);
     return(
