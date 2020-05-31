@@ -1,8 +1,11 @@
 {
   "name": "nap",
   "version": "0.1.0",
+  "engines": {
+    "node": "12.16.3",
+    "npm": "6.12.1"
+  },
   "private": true,
-  "proxy":"https://netaporter-f154b.firebaseio.com",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -10,6 +13,8 @@
     "axios": "^0.19.2",
     "bootstrap": "^4.5.0",
     "firebase-tools": "^8.4.0",
+    "node": "^14.3.0",
+    "node-modules": "^1.0.1",
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.1",
     "react-bootstrap-sidebar": "0.0.1",
@@ -23,7 +28,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "ng build --prod"
   },
   "eslintConfig": {
     "extends": "react-app"

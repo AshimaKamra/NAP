@@ -9,22 +9,22 @@ class Brand extends Component
         search:""
     }
 
-    renderProduct=product=>{
+    renderProduct=pro=>{
         const {search} =this.state;
-        var code =product.code.toLowerCase()
-        if(search!==""&&product.brand.name.toLowerCase().indexOf(search.toLowerCase())===-1)
+        var code =pro.code.toLowerCase()
+        if(search!==""&&pro.brand.toLowerCase().indexOf(search.toLowerCase())===-1)
         {
             return null;
         }
         return <div class="col-sm-4">
         <div className="card card-body">
             <div className="product-picture">
-                <img src={props.image} style={{width:'180px',height:'185px'}} alt="ProductImage"/>
+                <img src={pro.image} style={{width:'180px',height:'185px'}} alt="ProductImage"/>
             </div>
             <div>
-                <h2 className="product-name">{props.name}</h2>
+                <h2 className="product-name">{pro.name}</h2>
             </div>
-        <div className="brand-name">{props.brand}<br/>{props.discount}{props.createdat}</div>
+        <div className="brand-name">{pro.brand}<br/>{pro.discount}{pro.createdat}</div>
         </div>
     </div>
         
@@ -54,7 +54,7 @@ class Brand extends Component
                     required/>
                      </label></div>
                     <div className="float-right">
-                    <Button><NavLink to="/brnad">Go</NavLink> </Button></div>
+                    <Button><NavLink to="/brand">Go</NavLink> </Button></div>
                     </div>
             </div>
         )
