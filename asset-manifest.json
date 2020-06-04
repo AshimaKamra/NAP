@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/AshimaKamra/NAP/static/css/main.50fd303b.chunk.css",
-    "main.js": "/AshimaKamra/NAP/static/js/main.cf7d3842.chunk.js",
-    "main.js.map": "/AshimaKamra/NAP/static/js/main.cf7d3842.chunk.js.map",
+    "main.css": "/AshimaKamra/NAP/static/css/main.4beaa565.chunk.css",
+    "main.js": "/AshimaKamra/NAP/static/js/main.7ed587be.chunk.js",
+    "main.js.map": "/AshimaKamra/NAP/static/js/main.7ed587be.chunk.js.map",
     "runtime-main.js": "/AshimaKamra/NAP/static/js/runtime-main.d48238eb.js",
     "runtime-main.js.map": "/AshimaKamra/NAP/static/js/runtime-main.d48238eb.js.map",
     "static/css/2.829c9cb5.chunk.css": "/AshimaKamra/NAP/static/css/2.829c9cb5.chunk.css",
-    "static/js/2.2f541c0f.chunk.js": "/AshimaKamra/NAP/static/js/2.2f541c0f.chunk.js",
-    "static/js/2.2f541c0f.chunk.js.map": "/AshimaKamra/NAP/static/js/2.2f541c0f.chunk.js.map",
+    "static/js/2.9eac7331.chunk.js": "/AshimaKamra/NAP/static/js/2.9eac7331.chunk.js",
+    "static/js/2.9eac7331.chunk.js.map": "/AshimaKamra/NAP/static/js/2.9eac7331.chunk.js.map",
     "index.html": "/AshimaKamra/NAP/index.html",
-    "precache-manifest.77026192329c5877fd7e2658edbee488.js": "/AshimaKamra/NAP/precache-manifest.77026192329c5877fd7e2658edbee488.js",
+    "precache-manifest.6fc952a8e02cc283f599d6f421c4e823.js": "/AshimaKamra/NAP/precache-manifest.6fc952a8e02cc283f599d6f421c4e823.js",
     "service-worker.js": "/AshimaKamra/NAP/service-worker.js",
     "static/css/2.829c9cb5.chunk.css.map": "/AshimaKamra/NAP/static/css/2.829c9cb5.chunk.css.map",
-    "static/css/main.50fd303b.chunk.css.map": "/AshimaKamra/NAP/static/css/main.50fd303b.chunk.css.map",
-    "static/js/2.2f541c0f.chunk.js.LICENSE.txt": "/AshimaKamra/NAP/static/js/2.2f541c0f.chunk.js.LICENSE.txt",
+    "static/css/main.4beaa565.chunk.css.map": "/AshimaKamra/NAP/static/css/main.4beaa565.chunk.css.map",
+    "static/js/2.9eac7331.chunk.js.LICENSE.txt": "/AshimaKamra/NAP/static/js/2.9eac7331.chunk.js.LICENSE.txt",
     "static/media/Banner-Background.jpg": "/AshimaKamra/NAP/static/media/Banner-Background.89982258.jpg",
     "static/media/contact-me.jpg": "/AshimaKamra/NAP/static/media/contact-me.073b815a.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.d48238eb.js",
     "static/css/2.829c9cb5.chunk.css",
-    "static/js/2.2f541c0f.chunk.js",
-    "static/css/main.50fd303b.chunk.css",
-    "static/js/main.cf7d3842.chunk.js"
+    "static/js/2.9eac7331.chunk.js",
+    "static/css/main.4beaa565.chunk.css",
+    "static/js/main.7ed587be.chunk.js"
   ]
 }

@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/AshimaKamra/NAP/precache-manifest.77026192329c5877fd7e2658edbee488.js"
+  "/AshimaKamra/NAP/precache-manifest.6fc952a8e02cc283f599d6f421c4e823.js"
 );
 
 self.addEventListener('message', (event) => {
