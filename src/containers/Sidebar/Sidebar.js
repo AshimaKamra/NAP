@@ -1,11 +1,10 @@
 import React,{Component} from 'react';
 import {UncontrolledCollapse, Button, CardBody, Card, Label} from 'reactstrap';
-import {NavLink} from 'react-router-dom';
+
 import './Sidebar.css';
-import Brand from '../Brand/Brand';
-import Discount from '../Discount/Discount';
-import Stock from '../Stock/Stock'
-import CreatedAt from '../CreatedAt/CreatedAt'
+
+import CreatedAt from '../CreatedAt/CreatedAt';
+import {Link} from 'react-router-dom';
 class Sidebar extends Component
 {
     
@@ -35,9 +34,9 @@ class Sidebar extends Component
                                        <form className="filter-form">
                                            <div className="tb">
                                                <div className="td">
-                                                  <Brand/>
-                                                       <div>
-                                                       </div>
+                                                  <button className="brand" style={{width:'100%',borderRadius:'3px'}}><Link to="/brand" style={{width:'50%'}}>Click to search</Link></button>
+                                                <div>
+                                                </div>
                                                </div>
                                            </div>
                                        </form>
@@ -58,9 +57,7 @@ class Sidebar extends Component
                                     </div>
                                     <UncontrolledCollapse toggler="#toggler-discount">
                                        <Card>
-                                           <CardBody>
-                                               <Discount/>
-                                           </CardBody>
+                                           <button className="brand" style={{width:'100%',borderRadius:'3px'}}><Link to="/discount" style={{width:'50%'}}>Click to search</Link></button>
                                        </Card>
                                     </UncontrolledCollapse>
                                 </div>
@@ -78,9 +75,9 @@ class Sidebar extends Component
                                     </div>
                                     <UncontrolledCollapse toggler="toggler-stock">
                                         <Card>
-                                            <CardBody>
-                                            <Stock/>
-                                            </CardBody>
+                                            
+                                            <button className="stock" style={{width:'100%',borderRadius:'3px'}}><Link to="/stock" style={{width:'50%'}}>Click to search</Link></button>
+                                          
                                         </Card>
                                     </UncontrolledCollapse>
                                 </div>
@@ -102,27 +99,6 @@ class Sidebar extends Component
                                        </Card>
                                     </UncontrolledCollapse>
                                 </div>
-                                <hr/>
-                                <div className="Created-at-filter">
-                                    <div className="filter clearfix">
-                                        <div className="sidebar-filter float-left">
-                                            All Products
-                                        </div>
-                                        <div className="filter-toggle float-right">
-                                        <Button color="black" id="toggler-allproducts" className="toggler" style={{marginBottom: '1rem'}}>
-                                               +
-                                       </Button>
-                                        </div>
-                                    </div>
-                                    <UncontrolledCollapse toggler="toggler-allproducts">
-                                        <Card>
-                                            <Button>
-                                    <NavLink to="/AllProducts " style={{color:'white'}}>AllProducts</NavLink>
-                                    </Button>
-                                       </Card>
-                                    </UncontrolledCollapse>
-                                </div>
-                                
                             </div>
             </div>
         )

@@ -5,6 +5,8 @@ import Footer from './components/Footer/Footer';
 import Products from './containers/Products/Products'
 import Sidebar from './containers/Sidebar/Sidebar';
 import Brand from './containers/Brand/Brand'
+import Discount from './containers/Discount/Discount';
+import Stock from './containers/Stock/Stock';
 class App extends Component
 {
   state = {
@@ -15,9 +17,11 @@ class App extends Component
             url:"https://www.net-a-porter.com/gb/en/product/1000954/prada/feather-embellished-silk-twill-robe",
             brand:"prada",
             imgurl:"http://cache.net-a-porter.com/images/products/1000954/1000954_in_pp.jpg",
-            offerprice:1160,
-            regularprice:1160,
-            createdate:"2019-10-21T00:00:00.000Z"
+            offerprice:"1160",
+            regularprice:"1160",
+            createdate:"2019-10-21T00:00:00.000Z",
+            stockKey:"In Stock"
+
         },
         {
             id:2,
@@ -27,7 +31,8 @@ class App extends Component
             imgurl:"http://cache.net-a-porter.com/images/products/1000960/1000960_ou_pp.jpg",
             offerprice:1210,
             regularprice:1210,
-            createdate:"2019-10-21T00:00:00.000Z"
+            createdate:"2019-10-21T00:00:00.000Z",
+            stockKey:"Out Of Stock"
         },
         {
             id:3,
@@ -35,9 +40,10 @@ class App extends Component
             url:"https://www.net-a-porter.com/gb/en/product/1000995/prada/printed-silk-crepe-de-chine-flared-pants",
             brand:"prada",
             imgurl:"http://cache.net-a-porter.com/images/products/1000995/1000995_in_pp.jpg",
-            offerprice:855,
+            offerprice:"855",
             regularprice:855,
-            createdate:"2019-10-21T00:00:00.000Z"
+            createdate:"2019-10-21T00:00:00.000Z",
+            stockKey:"In Stock"
         },
         {
             id:4,
@@ -45,9 +51,10 @@ class App extends Component
             url:"https://www.net-a-porter.com/gb/en/product/1006246/a_p_c__atelier_de_production_et_de_creation/high-rise-straight-leg-jeans",
             brand:"a.p.c",
             imgurl:"http://cache.net-a-porter.com/images/products/1006246/1006246_in_pp.jpg",
-            offerprice:155,
+            offerprice:"155",
             regularprice:155,
-            createdate:"2019-10-21T00:00:00.000Z"
+            createdate:"2019-10-21T00:00:00.000Z",
+            stockKey:"Out Of Stock"
            
         },
         {
@@ -56,9 +63,10 @@ class App extends Component
             url:"https://www.net-a-porter.com/gb/en/product/1007684/the_row/coco-leather-mules",
             brand:"the row",
             imgurl:"http://cache.net-a-porter.com/images/products/1007684/1007684_in_pp.jpg",
-            offerprice:125,
+            offerprice:"125",
             regularprice:125,
-            createdate:"2019-10-21T00:00:00.000Z"
+            createdate:"2019-10-21T00:00:00.000Z",
+            stockKey:"In Stock"
         },
         {
             id:6,
@@ -66,9 +74,10 @@ class App extends Component
             url:"https://www.net-a-porter.com/gb/en/product/1009127/gucci/ace-watersnake-trimmed-embroidered-leather-sneakers",
             brand:"gucci",
             imgurl:"https://cache.net-a-porter.com/images/products/1009127/1009127_e1_pp.jpg",
-            offerprice:165,
+            offerprice:"165",
             regularprice:165,
-            createdate:"2019-10-21T00:00:00.000Z"
+            createdate:"2019-10-21T00:00:00.000Z",
+            stockKey:"In Stock"
         },
         {
             id:7,
@@ -76,9 +85,10 @@ class App extends Component
             url:"https://www.net-a-porter.com/gb/en/product/1009776/the_row/schoolboy-stretch-wool-blend-crepe-blazer",
             brand:"the row",
             imgurl:"http://cache.net-a-porter.com/images/products/1009776/1009776_in_pp.jpg",
-            offerprice:1605,
+            offerprice:"1605",
             regularprice:1605,
-            createdate:"2019-10-21T00:00:00.000Z"
+            createdate:"2019-10-21T00:00:00.000Z",
+            stockKey:"Out Of Stock"
         },
         {
             id:8,
@@ -86,9 +96,10 @@ class App extends Component
             url:"https://www.net-a-porter.com/gb/en/product/1009777/the_row/schoolboy-stretch-wool-blend-crepe-blazer",
             brand:"the row",
             imgurl:"http://cache.net-a-porter.com/images/products/1009777/1009777_in_pp.jpg",
-            offerprice:1250,
-            regularprice:1250,
-            createdate:"2019-10-21T00:00:00.000Z"
+            offerprice:"1250",
+            regularprice:"1250",
+            createdate:"2019-10-21T00:00:00.000Z",
+            stockKey:"Out Of Stock"
         },
         {
             id:9,
@@ -96,9 +107,10 @@ class App extends Component
             url:"https://www.net-a-porter.com/gb/en/product/1007684/the_row/coco-leather-mules",
             brand:"the row",
             imgurl:"http://cache.net-a-porter.com/images/products/1007684/1007684_in_pp.jpg",
-            offerprice:1255,
+            offerprice:"1255",
             regularprice:1255,
-            createdate:"2019-10-21T00:00:00.000Z"
+            createdate:"2019-10-21T00:00:00.000Z",
+            stockKey:"In Stock"
         },
         {
             id:10,
@@ -106,9 +118,10 @@ class App extends Component
             url:"https://www.net-a-porter.com/gb/en/product/1009779/the_row/ashland-cropped-mid-rise-straight-leg-jeans",
             brand:"the row",
             imgurl:"http://cache.net-a-porter.com/images/products/1009779/1009779_in_pp.jpg",
-            offerprice:1550,
+            offerprice:"1550",
             regularprice:1550,
-            createdate:"2019-10-21T00:00:00.000Z"
+            createdate:"2019-10-21T00:00:00.000Z",
+            stockKey:"Out Of Stock"
         },
         {
             id:11,
@@ -116,7 +129,7 @@ class App extends Component
             url:"https://www.net-a-porter.com/gb/en/product/1010127/saint_laurent/monogramme-quilted-leather-pouch",
             brand:"saint laurent",
             imgurl:"https://cache.net-a-porter.com/images/products/1010127/1010127_e1_pp.jpg",
-            offerprice:1256,
+            offerprice:"1256",
             regularprice:1256,
             createdate:"2019-10-21T00:00:00.000Z"
         },
@@ -126,9 +139,10 @@ class App extends Component
             url:"https://www.net-a-porter.com/gb/en/product/1017057/jimmy_choo/denise-studded-leather-espadrille-sandals",
             brand:"jimmy choo",
             imgurl:"http://cache.net-a-porter.com/images/products/1017057/1017057_fr_pp.jpg",
-            offerprice:225,
+            offerprice:"225",
             regularprice:225,
-            createdate:"2019-10-21T00:00:00.000Z"
+            createdate:"2019-10-21T00:00:00.000Z",
+            stockKey:"In Stock"
         },
         {
             id:13,
@@ -136,9 +150,10 @@ class App extends Component
             url:"https://www.net-a-porter.com/gb/en/product/1007684/the_row/coco-leather-mules",
             brand:"christian louboutin",
             imgurl:"http://cache.net-a-porter.com/images/products/1027758/1027758_fr_pp.jpg",
-            offerprice:1259,
+            offerprice:"1259",
             regularprice:1259,
-            createdate:"2019-10-21T00:00:00.000Z"
+            createdate:"2019-10-21T00:00:00.000Z",
+            stockKey:"Out Of Stock"
         },
         {
             id:14,
@@ -146,9 +161,10 @@ class App extends Component
             url:"https://www.net-a-porter.com/gb/en/product/1007684/the_row/coco-leather-mules",
             brand:"chirstian louboutin",
             imgurl:"http://cache.net-a-porter.com/images/products/1027768/1027768_in_pp.jpg",
-            offerprice:355,
+            offerprice:"355",
             regularprice:355,
-            createdate:"2019-10-21T00:00:00.000Z"
+            createdate:"2019-10-21T00:00:00.000Z",
+            stockKey:"Out Of Stock"
         },
         {
             id:15,
@@ -156,9 +172,10 @@ class App extends Component
             url:"https://www.net-a-porter.com/gb/en/product/1007684/the_row/coco-leather-mules",
             brand:"christian louboutin",
             imgurl:"http://cache.net-a-porter.com/images/products/1027778/1027778_in_pp.jpg",
-            offerprice:1256,
+            offerprice:"1256",
             regularprice:1256,
-            createdate:"2019-10-21T00:00:00.000Z"
+            createdate:"2019-10-21T00:00:00.000Z",
+            stockKey:"In Stock"
         },
         {
             id:16,
@@ -166,9 +183,10 @@ class App extends Component
             url:"https://www.net-a-porter.com/gb/en/product/1007684/the_row/coco-leather-mules",
             brand:"ancient greek",
             imgurl:"http://cache.net-a-porter.com/images/products/1034223/1034223_in_pp.jpg",
-            offerprice:550,
+            offerprice:"550",
             regularprice:550,
-            createdate:"2019-10-21T00:00:00.000Z"
+            createdate:"2019-10-21T00:00:00.000Z",
+            stockKey:"In Stock"
         },
         {
             id:17,
@@ -176,9 +194,10 @@ class App extends Component
             url:"https://www.net-a-porter.com/gb/en/product/1007684/the_row/coco-leather-mules",
             brand:"prada",
             imgurl:"http://cache.net-a-porter.com/images/products/1044716/1044716_in_pp.jpg",
-            offerprice:5500,
+            offerprice:"5500",
             regularprice:5500,
-            createdate:"2019-10-21T00:00:00.000Z"
+            createdate:"2019-10-21T00:00:00.000Z",
+            stockKey:"Out Of Stock"
         },
         {
             id:18,
@@ -186,9 +205,10 @@ class App extends Component
             url:"https://www.net-a-porter.com/gb/en/product/1007684/the_row/coco-leather-mules",
             brand:"saint laurent",
             imgurl:"https://cache.net-a-porter.com/images/products/1044848/1044848_cu_pp.jpg",
-            offerprice:1965,
+            offerprice:"1965",
             regularprice:1965,
-            createdate:"2019-10-21T00:00:00.000Z"
+            createdate:"2019-10-21T00:00:00.000Z",
+            stockKey:"In Stock"
         },
         {
             id:19,
@@ -196,9 +216,10 @@ class App extends Component
             url:"https://www.net-a-porter.com/gb/en/product/1007684/the_row/coco-leather-mules",
             brand:"gucci",
             imgurl:"http://cache.net-a-porter.com/images/products/1044914/1044914_in_pp.jpg",
-            offerprice:1650,
+            offerprice:"1650",
             regularprice:1650,
-            createdate:"2019-10-21T00:00:00.000Z"
+            createdate:"2019-10-21T00:00:00.000Z",
+            stockKey:"Out Of Stock"
         },
         {
             id:20,
@@ -206,9 +227,10 @@ class App extends Component
             url:"https://www.net-a-porter.com/gb/en/product/1007684/the_row/coco-leather-mules",
             brand:"gucci",
             imgurl:"http://cache.net-a-porter.com/images/products/1045146/1045146_fr_pp.jpg",
-            offerprice:1556,
+            offerprice:"1556",
             regularprice:1556,
-            createdate:"2019-10-21T00:00:00.000Z"
+            createdate:"2019-10-21T00:00:00.000Z",
+            stockKey:"In Stock"
         },
         {
             id:21,
@@ -216,9 +238,10 @@ class App extends Component
             url:"https://www.net-a-porter.com/gb/en/product/1007684/the_row/coco-leather-mules",
             brand:"gucci",
             imgurl:"http://cache.net-a-porter.com/images/products/1045153/1045153_in_pp.jpg",
-            offerprice:1889,
+            offerprice:"1889",
             regularprice:1889,
-            createdate:"2019-10-21T00:00:00.000Z"
+            createdate:"2019-10-21T00:00:00.000Z",
+            stockKey:"In Stock"
         }
 
 
@@ -243,8 +266,12 @@ class App extends Component
               </div>
             <div className="col-sm-9 products-panel">
                   <Switch>
-                 <Route path="/" render={(props)=><Products {...props} productList={this.state.productList}/>}/>
-                 <Route path="/brand" render={(props)=><Products {...props} productList={this.state.productList}/>}/>
+                 <Route path="/" exact render={(props)=><Products {...props} productList={this.state.productList}/>}/>
+                 <Route path="/brand" exact render={(props)=><Brand {...props} productList={this.state.productList}/>}/>
+                 <Route path="/discount" exact render={(props)=><Discount {...props} productList={this.state.productList}/>}/>
+                 <Route path="/stock" exact render={(props)=><Stock {...props} productList={this.state.productList}/>}/>
+                 
+
                   </Switch>
             </div>
             </div>

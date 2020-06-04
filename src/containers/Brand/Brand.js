@@ -1,8 +1,5 @@
 import React,{Component} from 'react';
-import axios from 'axios';
-import {UncontrolledCollapse, Button, CardBody, Card, Label} from 'reactstrap';
-import {NavLink} from 'react-router-dom';
-import Product from '../../components/Product/Product';
+
 class Brand extends Component
 {
     state={
@@ -11,51 +8,57 @@ class Brand extends Component
 
     renderProduct=pro=>{
         const {search} =this.state;
-        var code =pro.code.toLowerCase()
+        
         if(search!==""&&pro.brand.toLowerCase().indexOf(search.toLowerCase())===-1)
         {
             return null;
         }
-        return <div class="col-sm-4">
+        return  <div class="col-sm-4">
         <div className="card card-body">
             <div className="product-picture">
-                <img src={pro.image} style={{width:'180px',height:'185px'}} alt="ProductImage"/>
+               <a href={pro.url}> <img src={pro.imgurl} style={{width:'180px',height:'185px'}} alt="ProductImage"/></a>
             </div>
             <div>
-                <h2 className="product-name">{pro.name}</h2>
+                <h6 className="product-name"><b>{pro.name}</b></h6>
             </div>
-        <div className="brand-name">{pro.brand}<br/>{pro.discount}{pro.createdat}</div>
-        </div>
-    </div>
+              <div className="brand-name">{pro.brand}<br/>M.R.P-{pro.regularprice}<br/>Offer Price-{pro.offerprice}{pro.createdat}</div>
+           </div>
+          </div>
+         // return <Product image={pro.image} name={pro.image} brand={pro.brand} discount={pro.discount} createdat={pro.createdat}/>
         
       
     }
     
     handleOnInputChange=(event)=>{
-       const query=event.target.value;
-       console.log(query)
+       this.setState({search:event.target.value});
        
     }
     render()
-    {
-        const {query}=this.state;
-       console.warn(query);
+    {    
         return(
             <div className="brand">
                   <div className="clearfix">
-                    <div className="float-left"><label className="searh-label" htmlFor="search-input">
+                    <div className="float-left"><label className="searh-label" htmlFor="search-input"></label>
                     <input 
                     type="text" 
-                    value={query}
-                    name="query"
+                    name="search"
                     id="search-input"
                     placeholder="Search" 
                     onChange={this.handleOnInputChange}
-                    required/>
-                     </label></div>
-                    <div className="float-right">
-                    <Button><NavLink to="/brand">Go</NavLink> </Button></div>
+                    />
+                     </div>
+                   
                     </div>
+                    <br/>
+                    <div className="product-panel container-fluid">
+                <div className="row" id="myObj">
+                {
+                            this.props.productList.map(pro=>{
+                               return this.renderProduct(pro);
+                            })
+                        }
+                 </div>
+                </div>
             </div>
         )
     }

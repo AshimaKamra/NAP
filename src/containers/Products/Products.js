@@ -1,8 +1,5 @@
 import React,{Component} from 'react';
 
-import axios from 'axios';
-import Product from '../../components/Product/Product';
-
 class Products extends Component
 {
     
